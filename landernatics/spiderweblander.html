@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aesthetic Web Project</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    /* Reset some defaults */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #4e4e4e;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('land.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 15rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    nav {
+      position: fixed;
+        top: 0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 2rem;
+        z-index: 1000;
+        background: #302f2f;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        border-radius: 8px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 1rem;
+      color: #444;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin: 1rem 0 1.5rem 1.5rem;
+    }
+
+    figure {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    figure img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      font-style: italic;
+      color: #555;
+    }
+
+    blockquote {
+      background: #f0f0f0;
+      border-left: 5px solid #3d67c0;
+      margin: 1rem 0;
+      padding: 1rem;
+      font-style: italic;
+    }
+
+   footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background: #4683ac;
+  border-top: 1px solid #ddd;
+  color: #ffffff;
+}
+
+.social-links {
+  margin-top: 0.8rem;
+}
+
+.social-links a {
+  color: #fffdfd;
+  margin: 0 10px;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #081022; /* change hover color */
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header + Navigation -->
+  <header>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#index" >Main</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h1>My Aesthetic Website</h1>
+  </header>
+
+  <!-- Home Page -->
+  <main id="home">
+    <h2>Welcome to My Website</h2>
+    <p>This website is created as part of my HTML project. Explore the sections below to learn more!</p>
+    <blockquote>
+      “The web is not about technology, it’s about people.”  
+      <cite> – Paul Cookson</cite>
+    </blockquote>
+  </main>
+
+  <!-- Index Page -->
+  <main id="index">
+    <article>
+      <h2>The Future of Web Design</h2>
+      <p>Web design is evolving rapidly with modern frameworks, AI integration, and immersive experiences. 
+         Designers now focus more on accessibility, performance, and user-centered design.</p>
+      <p>Future trends include AI-driven personalization, voice-based interfaces, and seamless integration with AR/VR technologies.</p>
+
+      <h3>Top 3 Web Design Trends</h3>
+      <ul>
+        <li>Dark Mode & Minimal UI</li>
+        <li>AI-Powered Personalization</li>
+        <li>Immersive 3D & AR Experiences</li>
+      </ul>
+
+      <figure>
+        <img src="yey.jpg" alt="Web Design Concept">
+        <figcaption>Modern and aesthetic web design inspiration.</figcaption>
+      </figure>
+    </article>
+  </main>
+
+  <!-- About Page -->
+  <main id="about">
+    <h2>About Me</h2>
+    <p>Hello! My name is Lander Dela Cruz (Der). I am passionate about front-end web development, creating clean designs, and building interactive user experiences.</p>
+    <ul>
+      <li><strong>Name:</strong> Lander Dela Cruz</li>
+      <li><strong>Skills:</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Hobbies:</strong> Watching Anime, Listening to Music, Gaming</li>
+    </ul>
+  </main>
+
+  <!-- Contact Page -->
+  <main id="contact">
+    <h2>Contact Me</h2>
+    <p>You can reach me at:</p>
+    <p><strong>Email:</strong> landerdelacruz@example.com</p>
+    <p><strong>Phone:</strong> +63 912 345 6789</p>
+  </main>
+
+<footer>
+  <p>&copy; 2025 My Aesthetic Website | Built with using HTML & CSS</p>
+  <div class="social-links">
+    <a href="https://www.facebook.com/derwuwu/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/de.ruru/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://x.com/zsueshi" target="_blank"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
